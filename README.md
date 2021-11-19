@@ -1,43 +1,30 @@
 # ripp-design
 Jupyter notebooks and associated data for designing enzyme-modified peptides
 
-To install:
+# To install:
 All of the .py files in the packages folder along with the .py files in the ripp-analysis (github.com/VoigtLab/ripp-analysis) packages folder need to be downloaded and accessible either in the path or in the working directory (they need to be importable in python).
 
 
-In particular, files needed are:
+## In particular, files needed are:
+
+- modification_rules.py
+- ripp_design.py
+- enzymeanalysis.py
+- enzymeplots.py
+- lcms.py
+- lcmsanalysis.py
 
 
-modification_rules.py
+## Code was written, run, and tested with Python 3.7.10
 
-ripp_design.py
-
-enzymeanalysis.py
-
-enzymeplots.py
-
-lcms.py
-
-lcmsanalysis.py
-
-
-Code was written, run, and tested with Python 3.7.10
-
-The following additional packages are required:
-
-matplotlib (tested with version 3.0.2)
-
-pandas (tested with version 0.23.4)
-
-numpy (tested with version 1.19.4)
-
-seaborn (tested with version 0.9.0)
-
-regex (tested with version 2.5.77)
-
-biopython (tested with version 1.79)
-
-scipy (tested with version 1.5.4)
+- The following additional packages are required:
+- matplotlib (tested with version 3.0.2)
+- pandas (tested with version 0.23.4)
+- numpy (tested with version 1.19.4)
+- seaborn (tested with version 0.9.0)
+- regex (tested with version 2.5.77)
+- biopython (tested with version 1.79)
+- scipy (tested with version 1.5.4)
 
 
 
