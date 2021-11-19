@@ -35,6 +35,8 @@ Includes ipython notebooks and related metadata for analyzing LC-MS data of pept
 
 extracts.xlsx is an excel spreadsheet that contains all metadata for the extracts, including the peptide and modifying enzyme present in the extract, the expected mass, the expected mass shift after modification, etc. This file is required to parse the raw LC-MS data.
 
+dataset.pickle is a pickled pandas dataframe that is exported from the "Import extracts to dataframe" notebook. It contains post-processed LC-MS data for all of the extracts that is used by the other notebooks.
+
 ### Notebooks are split up by goal:
 
 - Import extracts to dataframe.ipynb -- This must be run first, analyzes raw LC-MS data to export a processed dataframe that is used by the other notebooks. With the full dataset, this takes about 3 hours on our server running 20 threads. The final result is a pickled pandas dataframe. The folder 'extract_dataframes' must be present in the working directory in order to run this notebook. The 'extracts.xlsx' spreadsheet must also be present.                                              
@@ -42,6 +44,12 @@ extracts.xlsx is an excel spreadsheet that contains all metadata for the extract
 - Core variant analysis (Figure 2, SI Notes).ipynb -- This notebook details the process used to generate plots shown in Figure 2 and Supplementary Notes. It pulls data from 'dataset.pickle'
 - SI Figures 2-5, 8-12 (Mod Validation).ipynb -- This notebook details the process used to generate plots shown in Supplementary Figures 2-5 and 8-12. It pulls data from 'dataset.pickle'
 - Raw Chromatograms (SI Figure 6).ipynb -- This notebook details the process used to generate plots shown in Supplementary Figure 6. It pulls data from 'dataset.pickle'
+
+### Folder "matplotlib"
+Within analysis, this folder contains exported .pdf and .png plots from executing the code in the ipython notebooks
+
+### Folder "extract_dataframes"
+Within analysis, this folder contains pickled dataframes, one for each extract. It includes all of the raw data that is removed from the dataset.pickle due to RAM/size constraints. The dataframes in this folder are used to generate raw spectra/chromatograms in the 'SI Figures 2-5, 8-12 (Mod Validation)' and 'Raw Chromatgorams (SI Figure 6)' notebooks.
                                                 
 ## Folder "design"
 Includes ipython notebook for designing new RiPPs based on peptide constraints. The example detailed in the notebook is the same as what is shown in Figure 3 of the manuscript.
