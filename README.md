@@ -27,7 +27,7 @@ All of the .py files in the packages folder along with the .py files in the ripp
 - scipy (tested with version 1.5.4)
 
 
-
+# To Use:
 Ipython notebooks are the best way to see how the software is used and serve as a "How To".
 
 ## Folder "analysis"
