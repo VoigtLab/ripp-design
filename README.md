@@ -47,6 +47,6 @@ Raw Chromatograms (SI Figure 6) -- This notebook details the process used to gen
                                                 
 Folder "design" includes ipython notebook for designing new RiPPs based on peptide constraints. The example detailed in the notebook is the same as what is shown in Figure 3 of the manuscript.
 
-Folder "tgn-sample-dataset" contains all the raw data, extract.xlsx file, and notebook for analyzing and exporting plots for just the enzyme TgnB. It is meant to be an example dataset to interact with the software.
+Folder "tgn-sample-dataset" contains all the raw data, extract.xlsx file, and notebook for analyzing and exporting plots for just the enzyme TgnB. It is meant to be an example dataset to interact with the software. To use - open the ipython notebook in the folder, ensure that all packages are importable and dependencies installed, and execute the code.
   
 Folder "lcms" contains all the raw data acquired/used for this study, split between folders "qqq" and "qtof". These folders are required if running the "Import extracts to dataframe" notebook, and the paths must be updated in that notebook
